@@ -4,6 +4,8 @@ This project is created as a showcase to auctionsoftware.
 
 This is only the frontend work of the project
 
+Backend of the project can be found https://github.com/AntenehYalew/auctionSW-Backend
+
 ### Getting started
 
 The App runs on React.
