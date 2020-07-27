@@ -1,0 +1,17 @@
+.pagination-cont {
+  margin: auto;
+  padding-top: 2rem;
+}
+
+.pagination-cont .pagination li button {
+  color: white;
+  background-color: rgb(92, 91, 91);
+}
+
+.page-item.active-page .page-link {
+  background-color: white;
+  color: black;
+}
+.page-link:focus {
+  box-shadow: 0 0 0 0;
+}

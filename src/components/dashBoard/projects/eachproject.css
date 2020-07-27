@@ -1,0 +1,17 @@
+.eachproject-cont {
+  width: 80%;
+  margin: auto;
+  text-align: left;
+  padding-bottom: 10rem;
+}
+.project-header {
+  font-size: 1.45rem;
+  margin-bottom: 1.25rem;
+}
+.project-body {
+  font-size: 1rem;
+  padding-left: 0.45rem;
+}
+.sorted {
+  text-decoration: underline rgb(2, 194, 66);
+}

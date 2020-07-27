@@ -1,0 +1,20 @@
+.login-cont {
+  width: 50%;
+  margin: 3rem auto auto auto;
+  position: relative;
+}
+.login-form {
+  width: 50%;
+  margin: 2rem auto;
+}
+.submit-btn {
+  background-color: black;
+  color: white;
+}
+.submit-btn:hover {
+  color: white;
+  background-color: rgb(94, 91, 91);
+}
+.login-cont h5 {
+  color: red;
+}

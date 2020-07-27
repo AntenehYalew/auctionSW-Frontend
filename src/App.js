@@ -1,24 +1,33 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { Switch, Route } from "react-router-dom";
+import "bootstrap/dist/css/bootstrap.css";
+import "./App.css";
+import Dashboard from "./components/dashBoard/projDashboard/projectsDashboard";
+import Login from "./components/dashBoard/login/login";
+import Navbar from "./components/public/navbar/navbar";
+import SuccessLogin from "./components/dashBoard/login/successlogin";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar />
+      <Switch>
+        <Route
+          exact
+          path="/"
+          render={(routeProps) => <Dashboard {...routeProps} />}
+        />
+        <Route
+          exact
+          path="/login"
+          render={(routeProps) => <Login {...routeProps} />}
+        />
+        <Route
+          exact
+          path="/successlogin"
+          render={(routeProps) => <SuccessLogin {...routeProps} />}
+        />
+      </Switch>
     </div>
   );
 }
